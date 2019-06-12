@@ -4,7 +4,7 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
@@ -20,10 +20,6 @@ setup(
     url='https://github.com/seven320/life_game',
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),
-    install_requires=[
-        'pygame',
-        'numpy',
-        'time',
-        'copy',
-    ]
+    install_requires=['pygame','numpy'],
+    test_suite = 'tests'
     )

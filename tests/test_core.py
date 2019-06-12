@@ -4,7 +4,6 @@ from .context import sample
 
 import unittest
 
-
 class BasicTestSuite(unittest.TestCase):
     """Basic test cases."""
 
