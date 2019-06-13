@@ -13,7 +13,7 @@ with open('LICENSE') as f:
 setup(
     name='life_game',
     version='0.1.0',
-    description='everyone can play lifegame with Python',
+    description='everyone can play lifegame with Python and pygame',
     long_description=readme,
     author='Ken.K',
     author_email='yosyuaomenw at yahoo.co.jp',

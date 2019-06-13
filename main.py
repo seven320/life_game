@@ -69,7 +69,8 @@ def status_update(A):#A.shape
     for i in range(X):
         for j in range(Y):
             # B[i][j] = cell_update(i,j,A)
-            B[i][j] = cell_update2(i,j,A_)
+            if cell_update2(i,j,A_):
+                B[i][j] = True
     return B
 
 def printlife(A):#表示機能
@@ -93,11 +94,16 @@ def load_life(life,A):
         print(sys.exc_info())
     return A
 
+def make_random_life(A):
+    X,Y = A.shape
+    A = np.random.randint(2,size=X * Y).reshape((X,Y))
+    return A
+
 def main():
     state = False
     button = False
-    X = 600
-    Y = 600
+    X = 300
+    Y = 300
     cell_size = 6
     pygame.init()
     screen = pygame.display.set_mode((X,Y))
@@ -121,7 +127,7 @@ def main():
     life_5 = []
     for i in range(X//cell_size):
         life_5.append([i,(X//cell_size)//2])
-    # life_6 = convert.convert(X,Y,cell_size)
+
     A = load_life(life,A)
     sleep_time = 0
     while(1):
@@ -166,7 +172,7 @@ def main():
                 if event.key == K_6:pass
                 if event.key == K_7:pass
                 if event.key == K_8:pass
-                if event.key == K_9:pass
+                if event.key == K_9: A = make_random_life(A)
                 if event.key == K_0: A=np.zeros((A.shape))
                 #pause機能
                 if event.key == pygame.K_SPACE: state=not(state)
@@ -181,7 +187,6 @@ def main():
         pygame.display.update()
 
         #running
-
         if state == 0:
             A = status_update(A)
             time.sleep(sleep_time)
