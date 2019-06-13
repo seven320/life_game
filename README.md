@@ -5,11 +5,11 @@ You can play lifegame with python.
 
 ## Getting Started
 ### pygame
-'''bash
+```
 pip install pygame
-'''
+```
 ### NumPy
-```bash
+```
 pip install numpy
 ```
 
@@ -32,4 +32,4 @@ push number button and lord pre life
 4: horizontal line
 5: vertical line
 9: random
-## Test
+<!-- ## Test -->
