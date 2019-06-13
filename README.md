@@ -22,12 +22,16 @@ pip install numpy
 python main.py
 ```
 ###In game display
+You can click and drug to make new cell or delete it.
+just make and see your cells and life.
+
 ```space key``` pause  
 ```esc``` exit game  
 ```→```  speed up  
 ```←``` speed down  　
 
-push number button and lord pre life  
+
+push number button and lord some pre cells
 ```0``` or ```delete key```: delete all cell
 ```1``` :gulider gun  
 ```2``` :donguri  
