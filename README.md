@@ -3,6 +3,10 @@
 ## About
 You can play lifegame with python.
 
+<img width="402" alt="sample2" src="https://user-images.githubusercontent.com/33506506/59411136-86d32800-8df5-11e9-94c4-dc205efe3018.png">
+
+<img width="401" alt="スクリーンショット 2019-06-13 16 09 56" src="https://user-images.githubusercontent.com/33506506/59411248-c0a42e80-8df5-11e9-8d5c-8c5da3e01ea4.png">
+
 ## Getting Started
 ### pygame
 ```
