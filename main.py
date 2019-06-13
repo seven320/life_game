@@ -102,9 +102,9 @@ def make_random_life(A):
 def main():
     state = False
     button = False
-    X = 300
-    Y = 300
-    cell_size = 6
+    X = 400
+    Y = 400
+    cell_size = 8
     pygame.init()
     screen = pygame.display.set_mode((X,Y))
     pygame.display.set_caption("LIFE GAME")
